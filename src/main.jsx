@@ -7,6 +7,7 @@ import {
   MapPin, Mail, Phone, X
 } from "lucide-react";
 import "./styles.css";
+import scpLogo from "./scp-traders-logo.png";
 
 const categories = [
   { title: "PET Jars", subtitle: "Clear jars in multiple capacities", image: "https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=700&q=80" },
@@ -103,7 +104,7 @@ function App() {
       <header className="main-header">
         <div className="container header-main">
           <a className="brand" href="#home" aria-label="SCP TRADERS home">
-            <img className="brand-logo" src="/src/scp-traders-logo.png" alt="SCP Traders" />
+            <img className="brand-logo" src={scpLogo} alt="SCP Traders" />
           </a>
           <form className="search-box" onSubmit={e => { e.preventDefault(); document.getElementById("products")?.scrollIntoView({ behavior: "smooth" }); }}>
             <Search size={22} />
@@ -283,7 +284,7 @@ function App() {
 
       <footer className="footer">
         <div className="container footer-grid">
-          <div className="footer-brand"><a className="brand footer-logo" href="#home"><img className="brand-logo" src="/src/scp-traders-logo.png" alt="SCP Traders" /></a><p>Thoughtful packaging options for everyday business needs.</p><div className="footer-social"><a href="#contact" aria-label="Email"><Mail size={17}/></a><a href="#contact" aria-label="Phone"><Phone size={17}/></a><a href="#contact" aria-label="Location"><MapPin size={17}/></a></div></div>
+          <div className="footer-brand"><a className="brand footer-logo" href="#home"><img className="brand-logo" src={scpLogo} alt="SCP Traders" /></a><p>Thoughtful packaging options for everyday business needs.</p><div className="footer-social"><a href="#contact" aria-label="Email"><Mail size={17}/></a><a href="#contact" aria-label="Phone"><Phone size={17}/></a><a href="#contact" aria-label="Location"><MapPin size={17}/></a></div></div>
           <div><h4>Quick links</h4><a href="#home">Home</a><a href="#products">All products</a><a href="#categories">Categories</a><a href="#about">About us</a></div>
           <div><h4>Product range</h4><a href="#products">PET jars</a><a href="#products">PET bottles</a><a href="#products">Oil bottles</a><a href="#products">Water cans</a></div>
           <div><h4>Need help?</h4><a href="#contact">Contact us</a><a href="#orders">Order assistance</a><a href="#contact">Bulk enquiries</a></div>
